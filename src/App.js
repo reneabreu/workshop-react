@@ -2,16 +2,20 @@ import React from 'react';
 import style from './App.module.css';
 import logo from './assets/react-chile-logo.png';
 
+// common
 import Menu from './components/common/menu/Menu';
 import Navbar from './components/common/menu/Navbar';
 import Breadcrumb from './components/common/menu/Breadcrumb';
+
+// Home
 import Welcome from './components/sections/home/Welcome';
+import CounterCard from './components/sections/home/CounterCard';
 
 function App() {
   return (
     <div className={style.container}>
-    <Menu texto="test"></Menu> {/* sempre fechar o componente*/}
-    <Menu texto='abcd' style={{color: 'red'}}/>
+    {/* <Menu texto="test"></Menu> sempre fechar o componente */}
+    {/* <Menu texto='abcd' style={{color: 'red'}}/> */}
 
       {/* NAVBAR */}
       <Navbar/>
@@ -29,18 +33,8 @@ function App() {
             {/* RESUMEN */}
             <section className="info-tiles">
               <div className="tile is-ancestor has-text-centered">
-                  <div className="tile is-parent">
-                      <article className="tile is-child box">
-                          <p className="title">439k</p>
-                          <p className="subtitle">Ordenes</p>
-                      </article>
-                  </div>
-                  <div className="tile is-parent">
-                      <article className="tile is-child box">
-                          <p className="title">59k</p>
-                          <p className="subtitle">Servicios</p>
-                      </article>
-                  </div>
+                  <CounterCard title='439k' subtitle='Ordenes'/>
+                  <CounterCard title='59k' subtitle='Servicios'/>
               </div>
             </section>
 
