@@ -5,7 +5,7 @@ class Menu extends React.Component {
     const { texto, color } = this.props; // As props são recebidas dentro do método render
 
         return(
-         <h1 { ...this.props }>{ texto } { color }</h1>
+         <h1 { ...this.props }>{ texto } </h1>
         )
     }
 }
