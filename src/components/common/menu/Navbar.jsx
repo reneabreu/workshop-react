@@ -2,6 +2,8 @@ import React from 'react';
 import style from './Navbar.module.css';
 import logo from '../../../../src/assets/react-chile-logo.png';
 
+import { Link } from 'react-router-dom';
+
 class Navbar extends React.Component {
 
     render() {
@@ -13,9 +15,9 @@ class Navbar extends React.Component {
                     <img src={logo} width="112" height="28" />
                 </a>
 
-                <a className="navbar-item is-active"><i className="ion ion-md-home"></i>Inicio</a>
-                <a className="navbar-item"><i className="ion ion-md-text"></i>Ordenes</a>
-                <a className="navbar-item"><i className="ion ion-md-list-box"></i>Servicios</a>
+                <Link to='/' className="navbar-item is-active"><i className="ion ion-md-home"></i>Inicio</Link>
+                <Link to='/orders' className="navbar-item"><i className="ion ion-md-text"></i>Ordenes</Link>
+                <Link to='/services' className="navbar-item"><i className="ion ion-md-list-box"></i>Servicios</Link>
 
                 </div>
                 

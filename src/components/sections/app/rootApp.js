@@ -12,13 +12,14 @@ class App extends Component {
 
         return (
             <div className={style.container}>
-                <Navbar/>
                 {/* <h1>FUNCIONA</h1> */}
                 <BrowserRouter>
+                    <Navbar/>
                     <Switch>
                         <Route exact path='/' component={Home} />
                         <Route exact path='/orders' component={Orders} />
                         <Route exact path='/services' component={Services} />
+                        {/* <Route path='*' component={} />  NOT FOUND*/}
                     </Switch>
                 </BrowserRouter>
             </div>
