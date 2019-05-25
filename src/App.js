@@ -2,8 +2,10 @@ import React from 'react';
 import style from './App.module.css';
 import logo from './assets/react-chile-logo.png';
 
-import Menu from './components/common/menu/Menu'
-import Navbar from './components/common/menu/Navbar'
+import Menu from './components/common/menu/Menu';
+import Navbar from './components/common/menu/Navbar';
+import Breadcrumb from './components/common/menu/Breadcrumb';
+import Welcome from './components/sections/home/Welcome';
 
 function App() {
   return (
@@ -19,28 +21,10 @@ function App() {
           <div className="column is-12">
             
             {/* BREADCRUM */}
-            <nav className="breadcrumb" aria-label="breadcrumbs">
-              <ul>
-                  <li><a href="../">Bulma</a></li>
-                  <li><a href="../">Templates</a></li>
-                  <li><a href="../">Examples</a></li>
-                  <li className="is-active"><a href="#" aria-current="page">Admin</a></li>
-              </ul>
-            </nav>
+            <Breadcrumb/>
             
             {/* BIENVENIDA */}
-            <section className={`hero is-info welcome is-small ${style.cuadroBienvenida} ` }>
-                    <div className="hero-body">
-                        <div className="container">
-                            <h1 className="title">
-                                Bienvenido, Juan Carlos Bodoque.
-                            </h1>
-                            <h2 className="subtitle">
-                                Que tenga un gran día!
-                            </h2>
-                        </div>
-                    </div>
-              </section>
+            <Welcome title='Bienvenido, Juan Carlos Bodoque.' subtitle='Que tenga un gran día!'/>
 
             {/* RESUMEN */}
             <section className="info-tiles">
