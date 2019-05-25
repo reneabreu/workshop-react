@@ -12,6 +12,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "api": "json-server -p 400 db.json",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
