@@ -1,9 +1,14 @@
 import React from 'react';
 import style from './App.module.css';
 import logo from './assets/react-chile-logo.png';
+
+import Menu from './components/common/menu/Menu'
 function App() {
   return (
     <div className={style.container}>
+    <Menu texto="test"></Menu> {/* sempre fechar o componente*/}
+    <Menu texto='abcd' style={{color: 'red'}}/>
+
       {/* NAVABR */}
       <nav className={`${style.navbarLine} navbar is-white` } role="navigation" aria-label="main navigation">
         <div className={`navbar-brand ${style.menu} `}>
