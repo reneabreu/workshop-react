@@ -4,7 +4,6 @@ import style from './Home.module.css'
 
 import Welcome from './Welcome';
 import CounterCard from './CounterCard';
-import Table from './Table'
 import Breadcrumb from '../../common/menu/Breadcrumb';
 
 const dataBreadcrumb = [
@@ -39,8 +38,6 @@ class Home extends Component {
                     </div>
                     </div>
                     
-                    {/* TABLE */}
-                    <Table />
             </div>
             // </Fragment>
         )
